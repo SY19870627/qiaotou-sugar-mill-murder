@@ -1,0 +1,69 @@
+# ============================================
+# 各種應用程式產生的鎖檔
+# ============================================
+# 注意：這些規則只對「工作目錄」有效，不影響 .git/ 內部的鎖檔。
+# .git/index.lock 由 git 自己管理，無法用 .gitignore 排除。
+*.lock
+*.lock.bak
+*.lock.bak2
+*.lock.old
+*.LOCK
+.~lock.*
+
+# ============================================
+# Microsoft Office 編輯時的暫存檔
+# ============================================
+~$*
+*.tmp
+*.wbk
+*.asd
+
+# ============================================
+# 文字編輯器暫存檔
+# ============================================
+*~
+*.swp
+*.swo
+.#*
+\#*#
+
+# ============================================
+# 作業系統雜檔
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# IDE / 編輯器設定
+# ============================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Codex MCP / browser automation local state
+.npm-cache/
+.chrome-devtools-profile/
+codex-mcp.tmp/
+
+# ============================================
+# 雲端同步衝突檔
+# ============================================
+*.conflict
+*conflicted copy*
+*衝突檔*
